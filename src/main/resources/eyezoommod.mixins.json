@@ -6,6 +6,9 @@
   "mixins": [
   ],
   "client": [
+    "GameRendererMixin",
+    "MinecraftClientMixin",
+    "access.WorldRendererAccess"
   ],
   "injectors": {
     "defaultRequire": 1

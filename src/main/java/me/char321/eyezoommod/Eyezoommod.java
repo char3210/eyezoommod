@@ -7,6 +7,7 @@ import net.minecraft.client.util.InputUtil;
 
 public class Eyezoommod implements ModInitializer {
     public static KeyBinding toggleKey;
+    public static boolean zoomed = false;
 
     /**
      * Runs the mod initializer.
