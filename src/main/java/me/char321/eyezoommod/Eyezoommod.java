@@ -11,15 +11,10 @@ public class Eyezoommod implements ModInitializer {
     private static MinecraftClient client;
     public static KeyBinding toggleKey;
     public static boolean zoomed = false;
-    public static boolean renderingWorld = false;
     public static int simulatedHeight = 16384;
 
     public static void onZoom() {
         ((WorldRendererAccess) (MinecraftClient.getInstance().worldRenderer)).setNeedsTerrainUpdate(true);
-
-        if (client.currentScreen != null) {
-            client.currentScreen.resize(client, client.getWindow().getScaledWidth(), client.getWindow().getScaledHeight());
-        }
     }
 
     public static int getScaleFactor() {

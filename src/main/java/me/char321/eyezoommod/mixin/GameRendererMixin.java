@@ -13,7 +13,6 @@ import org.spongepowered.asm.mixin.injection.At;
 @Mixin(GameRenderer.class)
 public class GameRendererMixin {
     @Shadow @Final private MinecraftClient client;
-    @Unique double prevnewfov;
 
     @ModifyExpressionValue(method="getBasicProjectionMatrix", at=@At(value="INVOKE",target = "Lnet/minecraft/client/render/GameRenderer;getFov(Lnet/minecraft/client/render/Camera;FZ)D"))
     public double newFov(double original) {

@@ -11,9 +11,6 @@
   "license": "GPL-3.0",
   "environment": "client",
   "entrypoints": {
-    "client": [
-      "me.char321.eyezoommod.client.EyezoommodClient"
-    ],
     "main": [
       "me.char321.eyezoommod.Eyezoommod"
     ]

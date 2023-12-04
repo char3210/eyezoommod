@@ -8,9 +8,6 @@
   "client": [
     "GameRendererMixin",
     "KeyboardMixin",
-    "MinecraftClientMixin",
-    "BufferBuilderMixin",
-    "WindowMixin",
     "access.WorldRendererAccess"
   ],
   "injectors": {
